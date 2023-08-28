@@ -41,7 +41,6 @@
     border-radius: 32px;
     border: none;
     color: var(--neutral);
-    cursor: pointer;
 }
 
 .btn:hover,
@@ -64,7 +63,6 @@
     border-radius: 32px;
     background-color: #E0E3EB;
     border: none;
-    cursor: pointer;
 }
 
 .switcher:hover,
