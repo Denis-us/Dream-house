@@ -1,0 +1,14 @@
+.logo {
+    width: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.text {
+    font-family: 'Lexend-700';
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--title);
+}

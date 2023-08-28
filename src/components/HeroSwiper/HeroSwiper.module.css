@@ -1,0 +1,23 @@
+.swiper {
+    width: 670px;
+}
+
+.slide {
+    background-color: aliceblue;
+    padding: 24px;
+    border-radius: 32px;
+}
+
+.title {
+    color: var(--title);
+    font-family: 'Lexend-600';
+    font-size: 16px;
+    line-height: 24px; 
+}
+
+.paragraph {
+    color: var(--text);
+    font-family: 'Lexend-400';
+    font-size: 12px;
+    line-height: 20px;
+}

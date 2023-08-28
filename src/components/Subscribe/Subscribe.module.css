@@ -1,0 +1,16 @@
+.wrapper {
+    padding: 65px 0px;
+    border-radius: 32px;
+    background: linear-gradient(to bottom right, rgba(119, 172, 241, 0.822), #e5f8f6, rgb(222, 205, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    color: var(--title);
+    font-family: 'Lexend-600';
+    font-size: 32px;
+    line-height: 48px; 
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Lexend-700";
+    src: url("./Lexend-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lexend-500";
+    src: url("./Lexend-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Lexend-400";
+    src: url("./Lexend-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lexend-600";
+    src: url("./Lexend-SemiBold.ttf");
+}

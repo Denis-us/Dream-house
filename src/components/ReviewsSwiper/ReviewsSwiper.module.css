@@ -1,0 +1,54 @@
+.swiper {
+    height: 600px;
+}
+
+.slide {
+    position: relative;
+    height: 505px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgWrapper {
+    border-radius: 8px;
+    opacity: 0.7;
+    overflow: hidden;
+    width: 740px;
+    height: 400px;
+}
+
+.img {
+    width: 100%;
+}
+
+.slideComment {
+    position: absolute;
+    bottom: -50px;
+    background-color: white;
+    border-radius: 16px;
+    width: 610px;
+    padding: 32px;
+
+}
+
+.commentInfo {
+    height: 48px;
+    background-color: antiquewhite;
+}
+
+.title {
+    color: var(--title);
+    font-family: 'Lexend-600';
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.text {
+    color: var(--text);
+    font-family: 'Lexend-400';
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}

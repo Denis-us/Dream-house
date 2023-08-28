@@ -1,0 +1,85 @@
+.head {
+    margin-left: 40px;
+}
+
+.text {
+    font-family: 'Lexend-500';
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 8px;
+}
+
+.pretitle {
+    position: relative;
+    color: var(--pretitle);
+    font-family: 'Lexend-500';
+    font-size: 14px;
+}
+
+.pretitle::before {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--pretitle);
+    content: "";
+    height: 1px;
+    width: 32px;
+}
+
+.title {
+    color: var(--title);
+    font-family: 'Lexend-600';
+    font-size: 32px;
+}
+
+.btn {
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    border: none;
+    color: var(--neutral);
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--btn);
+    color: var(--active-btn);
+}
+
+.btn:hover .btnImg,
+.btn:focus .btnImg {
+    color: var(--active-btn);
+}
+
+.btnImg {
+    color: var(--neutral)
+}
+
+.switcher {
+    padding: 12px 16px;
+    border-radius: 32px;
+    background-color: #E0E3EB;
+    border: none;
+    cursor: pointer;
+}
+
+.switcher:hover,
+.switcher:focus {
+    background-color: var(--active-btn)
+}
+
+.arrow {
+    color: black;
+}
+
+.switcher:hover .arrow {
+    color: white;
+}
+
+.arrowRight {
+    rotate: 180deg;
+}

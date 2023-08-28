@@ -1,0 +1,81 @@
+.header {
+    padding: 40px 0px;
+}
+
+.siteNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 345px; */
+}
+
+.listEl {
+    font-family: 'Lexend-600';
+    font-size: 14px;
+    line-height: 17.5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 32px;
+    padding: 8px 16px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listEl:not(:last-child) {
+    margin-right: 24px;
+}
+
+.link {
+    color: #F0F3FD;
+}
+
+.btnNav {
+    font-family: 'Lexend-600';
+    font-size: 14px;
+    line-height: 22px;
+    padding: 12px 24px;
+    height: 46px;
+    background-color: #D1FAE5;
+    color: #047857;
+    border: 1px solid #D1FAE5;
+    border-radius: 32px;
+    margin-left: 56px;
+    cursor: pointer;
+}
+
+.houseImg {
+    position: absolute;
+    top: 0;
+    right: -900px;
+    z-index: -1;
+}
+
+.trianglesImg {
+    position: absolute;
+    right: -785px;
+    top: 140px;
+}
+
+@media (min-width: 1200px) {
+    .houseImg {
+        right: -100px;
+    }
+
+    .trianglesImg {
+        right: 12.5px;
+    }
+}
+

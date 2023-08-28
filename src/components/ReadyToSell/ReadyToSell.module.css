@@ -1,0 +1,34 @@
+.head {
+    margin-left: 40px;
+}
+
+.pretitle {
+    position: relative;
+    color: var(--pretitle);
+    font-family: 'Lexend-500';
+    font-size: 14px;
+}
+
+.pretitle::before {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--pretitle);
+    content: "";
+    height: 1px;
+    width: 32px;
+}
+
+.title {
+    color: var(--title);
+    font-family: 'Lexend-600';
+    font-size: 32px;
+}
+
+.text {
+    color: var(--text);
+    font-family: 'Lexend-400';
+    font-size: 16px;
+    line-height: 28px;
+}

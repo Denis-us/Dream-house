@@ -1,0 +1,54 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 65px;
+}
+
+.heroMain {
+    width: 500px;
+}
+
+.title {
+    font-family: 'Lexend-600';
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--title);
+    margin-bottom: 24px;
+}
+
+.titlePart {
+    font-family: 'Lexend-700';
+    color: transparent;
+    -webkit-text-stroke: 1px var(--title);
+}
+
+.paragraph {
+    font-family: 'Lexend-400';
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--text);
+}
+
+.partners {
+    margin-top: 32px;
+}
+
+.list {
+    display: flex;
+}
+
+.listEl:not(:last-child) {
+    margin-right: 32px;
+}
+
+.heroSlider {
+    position: absolute;
+    right: -900px;
+}
+
+@media (min-width: 1200px) {
+    .heroSlider {
+        right: -100px;
+    }
+}

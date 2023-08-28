@@ -1,0 +1,62 @@
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 340px;
+    height: 380px;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.img {
+    height: auto;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    padding: 8px 16px;
+    border-radius: 32px;
+    border: none;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.popular {
+    color: #EF4444;
+    background-color: #FEE2E2;
+}
+
+.new {
+    color: #1D4ED8;
+    background-color: #DBEAFE;
+}
+
+.best {
+    color: #047857;
+    background-color: #D1FAE5;
+}
+
+.name {
+    color: #0E1735;
+    font-family: 'Lexend-500';
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.price {
+    color: #0E1735;
+    font-family: 'Lexend-500';
+    font-size: 20px;
+    line-height: 32px;
+}
