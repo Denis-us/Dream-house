@@ -88,7 +88,7 @@
 }
 
 .name {
-    color: #0E1735;
+    color: var(--name);
     font-family: 'Lexend-500';
     font-size: 18px;
     line-height: 24px

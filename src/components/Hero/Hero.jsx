@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSwiper from '../HeroSwiper/HeroSwiper';
-import Form from '../Form/Form';
+import FormSubscribe from '../FormSubscribe/FormSubscribe';
 import s from './Hero.module.css';
 
 import marker from '../../svg/marker.svg'
@@ -10,6 +10,9 @@ import partner2 from '../../svg/tiket.svg'
 import partner3 from '../../svg/airbnb.svg'
 import partner4 from '../../svg/tripadvisor.svg'
 
+import houseImg from '../../png/hero-image.png'
+import {ReactComponent as TrianglesImg} from '../../svg/trianglesHero.svg'
+
 
 const Hero = () => {
   
@@ -18,29 +21,41 @@ const Hero = () => {
             <div class="container">
                 <div className={s.hero}>
                     <div className={s.heroMain}>
-                        <h1 className={s.title}>Find The Place To Live <span className={s.titlePart}>Your Dreams</span> Easily Here</h1>
+                        <h1 className={s.title}>Find The Place To<br/>Live <span className={s.titlePart}>Your Dreams</span><br/>Easily Here</h1>
                         <p className={s.paragraph}>Everything you need about finding your place to live will be here, where it will be easier for you</p>
 
-                        <Form icoInput={marker} placeholder={'Search for the location you want!'} btn={'Search '} icoBtn={arrow}/>
+                        <FormSubscribe icoInput={marker} placeholder={'Search for the location you want!'} btn={'Search '} icoBtn={arrow}/>
 
                         <p className={`${s.paragraph} ${s.partners}`}>Our Partnership</p>
                         <ul className={s.list}>
                             <li className={s.listEl}>
-                                <img src={partner1} alt="traveloka" />
+                                <a href="https://www.traveloka.com">
+                                    <img src={partner1} alt="traveloka" />
+                                </a>
                             </li>
                             <li className={s.listEl}>
-                                <img src={partner2} alt="tiket" />
+                                <a href="https://www.tiket.com/">
+                                    <img src={partner2} alt="tiket" />
+                                </a>
                             </li>
                             <li className={s.listEl}>
-                                <img src={partner3} alt="airbnb" />
+                                <a href="https://www.airbnb.com.ua">
+                                    <img src={partner3} alt="airbnb" />
+                                </a>
                             </li>
                             <li className={s.listEl}>
-                                <img src={partner4} alt="tripadvisor" />
+                                <a href="https://www.tripadvisor.com">
+                                    <img src={partner4} alt="tripadvisor" />
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div className={s.heroSlider}>
-                        <HeroSwiper/>
+                        <img src={houseImg} alt="hotel" className={s.houseImg}/>
+                        <TrianglesImg className={s.trianglesImg}/>
+                        <div className={s.swiper}>
+                            <HeroSwiper/>
+                        </div>
                     </div>
                 </div>
             </div>

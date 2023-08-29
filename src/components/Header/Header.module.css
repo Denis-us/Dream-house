@@ -1,5 +1,11 @@
 .header {
-    padding: 40px 0px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 40px;
+    z-index: 1;
+    /* overflow: hidden; */
 }
 
 .siteNav {
@@ -17,7 +23,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 345px; */
 }
 
 .listEl {
@@ -32,14 +37,90 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: all 0.3s ease;
 }
 
 .listEl:not(:last-child) {
     margin-right: 24px;
 }
 
+.listEl:hover,
+.listEl:focus {
+    background-color: #D1FAE5;
+    
+}
+
 .link {
+    display: flex;
+    align-items: center;
     color: #F0F3FD;
+    transition: color 0.3s ease;
+}
+
+.listEl:hover .link,
+.listEl:focus .link {
+    color: #047857;
+}
+
+.arrow {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+}
+
+.dropMenu:hover .arrow,
+.dropMenu:focus .arrow {
+    rotate: 90deg;
+}
+
+.dropMenu:hover .dropdown,
+.dropMenu:focus .dropdown {
+    max-height: 300px;
+}
+
+.dropMenu {
+    position: relative;
+}
+ 
+.dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #D1FAE5;
+    border-radius: 26px;
+    width: 100%;
+    margin-top: 8px;
+}
+  
+.dropdownItem {
+    position: relative;
+    padding: 0px 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dropdownItem:first-child {
+    margin-top: 10px;
+}
+
+.dropdownItem::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 16px;
+    transition: width 0.3s ease-in-out;
+}
+
+.dropdownItem:hover::after,
+.dropdownItem:focus::after {
+    width: 50%
 }
 
 .btnNav {
@@ -54,27 +135,3 @@
     border-radius: 32px;
     margin-left: 56px;
 }
-
-.houseImg {
-    position: absolute;
-    top: 0;
-    right: -900px;
-    z-index: -1;
-}
-
-.trianglesImg {
-    position: absolute;
-    right: -785px;
-    top: 140px;
-}
-
-@media (min-width: 1200px) {
-    .houseImg {
-        right: -100px;
-    }
-
-    .trianglesImg {
-        right: 12.5px;
-    }
-}
-

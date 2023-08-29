@@ -1,8 +1,9 @@
 import React from 'react';
 import Logo from '../Logo/Logo';
 import s from './Header.module.css';
-import houseImg from '../../png/hero-image.png'
-import trianglesImg from '../../svg/trianglesHero.svg'
+
+import {ReactComponent as Arrow} from '../../svg/arrowRight.svg'
+
 
 const Header = () => {
   
@@ -12,18 +13,35 @@ const Header = () => {
               <div class={s.siteNav}>
                 <Logo/>
                 
-                <div className={s.menu}>
+                <nav className={s.menu}>
                   <ul class={s.list}>
-                      <li class={s.listEl}><a href="/" class={s.link}>About Us</a></li>
-                      <li class={s.listEl}><a href="/" class={s.link}>Article</a></li>
-                      <li class={s.listEl}><a href="/" class={s.link}>Property</a></li>
+                      <li class={s.listEl}>
+                        <a href="/" class={s.link}>
+                          <span>About Us</span>
+                        </a>
+                      </li>
+                      <li class={s.listEl}>
+                        <a href="/" class={s.link}>
+                          <span>Article</span>
+                        </a>
+                      </li>
+                      <li class={`${s.listEl} ${s.dropMenu}`}>
+                        <a href="/" class={s.link}>
+                          <span>Property</span>
+                          <Arrow className={s.arrow}/>
+                        </a>
+                        <ul class={s.dropdown}>
+                          <li class={s.dropdownItem}><a href="/" class={s.link}>House</a></li>
+                          <li class={s.dropdownItem}><a href="/" class={s.link}>Villa</a></li>
+                          <li class={s.dropdownItem}><a href="/" class={s.link}>Apartment</a></li>
+                        </ul>
+                      </li>
+                      
                   </ul>
 
                   <button class={s.btnNav}>Sign Up!</button>
-                </div>
+                </nav>
               </div>
-              <img src={houseImg} alt="hotel" className={s.houseImg}/>
-              <img src={trianglesImg} alt="triangles" className={s.trianglesImg}/>
             </div>
         </header>
     );

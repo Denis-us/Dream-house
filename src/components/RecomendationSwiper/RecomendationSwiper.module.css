@@ -1,3 +1,7 @@
+.swiper {
+    margin-left: 40px;
+}
+
 .card {
     position: relative;
     display: flex;
@@ -47,16 +51,44 @@
     background-color: #D1FAE5;
 }
 
-.name {
-    color: #0E1735;
+.title {
+    color: var(--name);
     font-family: 'Lexend-500';
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 8px;
 }
 
 .price {
-    color: #0E1735;
+    color: var(--name);
     font-family: 'Lexend-500';
     font-size: 20px;
     line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 16px;
+}
+
+.name {
+    color: var(--name);
+    font-family: 'Lexend-500';
+    font-size: 18px;
+    line-height: 24px
+}
+
+.city {
+    color: var(--neutral);
+    font-family: 'Lexend-500';
+    font-size: 14px;
+    line-height: 22px;
 }

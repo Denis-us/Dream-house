@@ -2,11 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 65px;
+    margin-top: 230px;
+    margin-bottom: 45px;
 }
 
 .heroMain {
     width: 500px;
+    margin-right: 100px;
 }
 
 .title {
@@ -43,12 +45,20 @@
 }
 
 .heroSlider {
-    position: absolute;
-    right: -900px;
+    position: relative;
 }
 
-@media (min-width: 1200px) {
-    .heroSlider {
-        right: -100px;
-    }
+.swiper {
+    margin-left: 45px;
+}
+
+.houseImg {
+    position: absolute;
+    bottom: -40px;
+}
+
+.trianglesImg {
+    position: absolute;
+    top: -450px;
+    left: 80px;
 }

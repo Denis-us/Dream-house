@@ -12,7 +12,7 @@ const Recomendations = () => {
     return (
         <section>
             <div class="container">
-                <div>
+                <div className={s.nav}>
                     <div className={s.head}>
                         <p className={s.pretitle}>Our Recommendation</p>
                         <h2 className={s.title}>Featured House</h2>
@@ -46,10 +46,11 @@ const Recomendations = () => {
                         </button>
                     </div>
                 </div>
-                <div>
-                    <RecomendationSwiper/>
-                </div>
+                {/* <div>
+                   
+                </div> */}
             </div>
+            <RecomendationSwiper/>
         </section>
     );
   }

@@ -1,3 +1,10 @@
+.nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
 .head {
     margin-left: 40px;
 }
@@ -14,6 +21,7 @@
     color: var(--pretitle);
     font-family: 'Lexend-500';
     font-size: 14px;
+    margin-bottom: 12px;
 }
 
 .pretitle::before {
@@ -31,6 +39,16 @@
     color: var(--title);
     font-family: 'Lexend-600';
     font-size: 32px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+
+}
+
+.listEl:not(:last-child) {
+    margin-right: 32px;
 }
 
 .btn {
@@ -63,6 +81,10 @@
     border-radius: 32px;
     background-color: #E0E3EB;
     border: none;
+}
+
+.switcher:not(:last-child) {
+    margin-right: 16px;
 }
 
 .switcher:hover,

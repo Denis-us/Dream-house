@@ -2,9 +2,9 @@ import React from 'react';
 import Logo from '../Logo/Logo';
 import s from './Footer.module.css';
 
-import facebook from '../../svg/facebook.svg';
-import twitter from '../../svg/twitter.svg';
-import instagrem from '../../svg/instagram.svg';
+import {ReactComponent as Facebook} from '../../svg/facebook.svg';
+import {ReactComponent as Twitter} from '../../svg/twitter.svg';
+import {ReactComponent as Instagrem} from '../../svg/instagram.svg';
 
 
 const Footer = () => {
@@ -18,13 +18,19 @@ const Footer = () => {
                         <p className={s.footerText}>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
                         <ul className={s.socials}>
                             <li className={s.socEl}>
-                                <img src={facebook} alt="facebook"/>
+                                <a href="https://facebook.com/">
+                                    <Facebook className={s.ico}/>
+                                </a>
                             </li>
                             <li className={s.socEl}>
-                                <img src={twitter} alt="twitter"/>
+                                <a href="https://twitter.com/">
+                                    <Twitter className={s.ico}/>
+                                </a>
                             </li>
                             <li className={s.socEl}>
-                                <img src={instagrem} alt="instagrem"/>
+                                <a href="https://www.instagram.com/">
+                                    <Instagrem className={s.ico}/>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -32,22 +38,22 @@ const Footer = () => {
                         <ul className={s.footerInfo}>
                             <li className={s.infoEl}>
                                 <h3 className={s.infoTitle}>Property</h3>
-                                <p className={s.infoText}>House</p>
-                                <p className={s.infoText}>Apartment</p>
-                                <p className={s.infoText}>Villa</p>
+                                <a href='/' className={s.infoLink}>House</a>
+                                <a href='/' className={s.infoLink}>Apartment</a>
+                                <a href='/' className={s.infoLink}>Villa</a>
                             </li>
                             <li className={s.infoEl}>
                                 <h3 className={s.infoTitle}>Article</h3>
-                                <p className={s.infoText}>New Article</p>
-                                <p className={s.infoText}>Popular Article</p>
-                                <p className={s.infoText}>Most Read</p>
-                                <p className={s.infoText}>Tips & Tricks</p>
+                                <a href='/' className={s.infoLink}>New Article</a>
+                                <a href='/' className={s.infoLink}>Popular Article</a>
+                                <a href='/' className={s.infoLink}>Most Read</a>
+                                <a href='/' className={s.infoLink}>Tips & Tricks</a>
                             </li>
                             <li className={s.infoEl}>
                                 <h3 className={s.infoTitle}>Contact</h3>
-                                <p className={s.infoText}>2464 Royal Ln. Mesa, New Jersey 45463</p>
-                                <p className={s.infoText}>(671) 555-0110</p>
-                                <p className={s.infoText}>info@hounter.com</p>
+                                <a href='/' className={s.infoLink}>2464 Royal Ln. Mesa, New Jersey 45463</a>
+                                <a href='tel:6715550110' className={s.infoLink}>(671) 555-0110</a>
+                                <a href='mailto:info@hounter.com' className={s.infoLink}>info@hounter.com</a>
                             </li>
                         </ul>
                     </div>
