@@ -7,7 +7,7 @@
 }
 
 .heroMain {
-    width: 500px;
+    width: 50%;
     margin-right: 100px;
 }
 
@@ -49,6 +49,7 @@
 }
 
 .swiper {
+    width: 675px;
     margin-left: 45px;
 }
 

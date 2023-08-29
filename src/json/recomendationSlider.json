@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "house": "images/jpg/houseSlide.jpg",
+        "alt": "villa1",
+        "type": "villa",
+        "category": "Popular",
+        "title": "Roselands House",
+        "price": "$ 35.000.000",
+        "avatar": "images/jpg/avatars/diane.jpg",
+        "name": "Dianne Russell",
+        "city": "Manchester, Kentucky"
+    }, {
+        "id": 2,
+        "house": "images/jpg/houseSlide2.jpg",
+        "alt": "villa2",
+        "type": "villa",
+        "category": "New House",
+        "title": "Woodlandside",
+        "price": "$ 22.000.000",
+        "avatar": "images/jpg/avatars/robert.jpg",
+        "name": "Robert Fox",
+        "city": "Dr. San Jose, South Dakota"
+    }, {
+        "id": 3,
+        "house": "images/jpg/houseSlide3.jpg",
+        "alt": "house1",
+        "type": "house",
+        "category": "Popular",
+        "title": "The Old Lighthouse",
+        "price": "$ 20.000.000",
+        "avatar": "images/jpg/avatars/ronald.jpg",
+        "name": "Ronald Richards",
+        "city": "Santa Ana, Illinois"
+    }, {
+        "id": 4,
+        "house": "images/jpg/houseSlide4.jpg",
+        "alt": "apartment1",
+        "type": "apartment",
+        "category": "Best Deals",
+        "title": "Cosmo's House",
+        "price": "$ 44.000.000",
+        "avatar": "images/jpg/avatars/jenny.jpg",
+        "name": "Jenny Wilson",
+        "city": "Preston Rd. Inglewood, Maine 98380"
+    }, {
+        "id": 5,
+        "house": "images/jpg/houseSlide2.jpg",
+        "alt": "villa3",
+        "type": "villa",
+        "category": "Popular",
+        "title": "Woodlandside",
+        "price": "$ 26.000.000",
+        "avatar": "images/jpg/avatars/diane.jpg",
+        "name": "Dianne Russell",
+        "city": "Santa Ana, Illinois"
+    }, {
+        "id": 6,
+        "house": "images/jpg/houseSlide4.jpg",
+        "alt": "apartment2",
+        "type": "apartment",
+        "category": "New House",
+        "title": "Space House",
+        "price": "$ 50.000.000",
+        "avatar": "images/jpg/avatars/robert.jpg",
+        "name": "Dianne Russell",
+        "city": "Preston Rd. Inglewood, Maine 98380"
+    }
+]

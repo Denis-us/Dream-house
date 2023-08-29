@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import s from './Form.module.css';
+import s from './FormSubscribe.module.css';
 
 const Form = ({ icoInput, placeholder, btn, icoBtn }) => {
     const [email, setEmail] = useState('');

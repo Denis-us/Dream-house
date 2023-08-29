@@ -2,7 +2,7 @@ import React from 'react';
 import FormSubscribe from '../FormSubscribe/FormSubscribe';
 import s from './Subscribe.module.css';
 
-import email from '../../svg/email.svg'
+import email from '../../images/svg/email.svg'
 
 const Subscribe = () => {
   

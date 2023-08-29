@@ -3,15 +3,15 @@ import HeroSwiper from '../HeroSwiper/HeroSwiper';
 import FormSubscribe from '../FormSubscribe/FormSubscribe';
 import s from './Hero.module.css';
 
-import marker from '../../svg/marker.svg'
-import arrow from '../../svg/arrowRight.svg'
-import partner1 from '../../svg/traveloka.svg'
-import partner2 from '../../svg/tiket.svg'
-import partner3 from '../../svg/airbnb.svg'
-import partner4 from '../../svg/tripadvisor.svg'
+import marker from '../../images/svg/marker.svg'
+import arrow from '../../images/svg/arrowRight.svg'
+import partner1 from '../../images/svg/traveloka.svg'
+import partner2 from '../../images/svg/tiket.svg'
+import partner3 from '../../images/svg/airbnb.svg'
+import partner4 from '../../images/svg/tripadvisor.svg'
 
-import houseImg from '../../png/hero-image.png'
-import {ReactComponent as TrianglesImg} from '../../svg/trianglesHero.svg'
+import houseImg from '../../images/png/hero-image.png'
+import {ReactComponent as TrianglesImg} from '../../images/svg/trianglesHero.svg'
 
 
 const Hero = () => {

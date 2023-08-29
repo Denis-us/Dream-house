@@ -2,9 +2,9 @@ import React from 'react';
 import Logo from '../Logo/Logo';
 import s from './Footer.module.css';
 
-import {ReactComponent as Facebook} from '../../svg/facebook.svg';
-import {ReactComponent as Twitter} from '../../svg/twitter.svg';
-import {ReactComponent as Instagrem} from '../../svg/instagram.svg';
+import {ReactComponent as Facebook} from '../../images/svg/facebook.svg';
+import {ReactComponent as Twitter} from '../../images/svg/twitter.svg';
+import {ReactComponent as Instagrem} from '../../images/svg/instagram.svg';
 
 
 const Footer = () => {

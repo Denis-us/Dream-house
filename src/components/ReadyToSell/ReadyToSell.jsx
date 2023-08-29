@@ -1,13 +1,13 @@
 import React from 'react';
 import s from './ReadyToSell.module.css';
 
-import {ReactComponent as Bed} from '../../svg/bed.svg'
-import {ReactComponent as Bath} from '../../svg/bath.svg'
-import {ReactComponent as Garage} from '../../svg/garage.svg'
-import {ReactComponent as Floor} from '../../svg/stairs.svg'
-import diane from '../../jpg/avatars/diane.jpg'
-import phone from '../../svg/phone.svg'
-import house from '../../png/houseSlide5.png'
+import {ReactComponent as Bed} from '../../images/svg/bed.svg'
+import {ReactComponent as Bath} from '../../images/svg/bath.svg'
+import {ReactComponent as Garage} from '../../images/svg/garage.svg'
+import {ReactComponent as Floor} from '../../images/svg/stairs.svg'
+import diane from '../../images/jpg/avatars/diane.jpg'
+import phone from '../../images/svg/phone.svg'
+import house from '../../images/png/houseSlide5.png'
 
 const ReadyToSell = () => {
   

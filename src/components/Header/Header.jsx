@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../Logo/Logo';
 import s from './Header.module.css';
 
-import {ReactComponent as Arrow} from '../../svg/arrowRight.svg'
+import {ReactComponent as Arrow} from '../../images/svg/arrowRight.svg'
 
 
 const Header = () => {

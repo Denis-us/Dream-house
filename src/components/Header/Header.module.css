@@ -5,7 +5,7 @@
     transform: translateX(-50%);
     padding-top: 40px;
     z-index: 1;
-    /* overflow: hidden; */
+    width: 100%;
 }
 
 .siteNav {

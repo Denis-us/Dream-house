@@ -1,15 +1,15 @@
 import React from 'react';
 import s from './MoreAbout.module.css';
 
-import house1 from '../../jpg/moreHouse1.jpg'
-import house2 from '../../jpg/moreHouse2.jpg'
-import house3 from '../../jpg/moreHouse3.jpg'
-import house4 from '../../jpg/moreHouse4.jpg'
-import avatar1 from '../../jpg/avatars/diane.jpg'
-import avatar2 from '../../jpg/avatars/cort.jpg'
-import avatar3 from '../../jpg/avatars/dan.jpg'
-import avatar4 from '../../jpg/avatars/jake.jpg'
-import {ReactComponent as Time} from '../../svg/time.svg';
+import house1 from '../../images/jpg/moreHouse1.jpg'
+import house2 from '../../images/jpg/moreHouse2.jpg'
+import house3 from '../../images/jpg/moreHouse3.jpg'
+import house4 from '../../images/jpg/moreHouse4.jpg'
+import avatar1 from '../../images/jpg/avatars/diane.jpg'
+import avatar2 from '../../images/jpg/avatars/cort.jpg'
+import avatar3 from '../../images/jpg/avatars/dan.jpg'
+import avatar4 from '../../images/jpg/avatars/jake.jpg'
+import {ReactComponent as Time} from '../../images/svg/time.svg';
 
 const MoreAbout = () => {
   

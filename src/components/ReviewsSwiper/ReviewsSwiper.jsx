@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import s from './ReviewsSwiper.module.css';
 
-import villa1 from '../../jpg/villa.jpg'
-import villa2 from '../../jpg/villa2.jpg'
-import villa3 from '../../jpg/villa3.jpg'
+import villa1 from '../../images/jpg/villa.jpg'
+import villa2 from '../../images/jpg/villa2.jpg'
+import villa3 from '../../images/jpg/villa3.jpg'
 
-import diane from '../../jpg/avatars/diane.jpg'
-import robert from '../../jpg/avatars/robert.jpg'
-import jenny from '../../jpg/avatars/jenny.jpg'
+import diane from '../../images/jpg/avatars/diane.jpg'
+import robert from '../../images/jpg/avatars/robert.jpg'
+import jenny from '../../images/jpg/avatars/jenny.jpg'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';

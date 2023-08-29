@@ -76,30 +76,97 @@
     color: var(--neutral)
 }
 
-.switcher {
-    padding: 12px 16px;
+.swiper {
+    margin-left: 40px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 340px;
+    height: 380px;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.img {
+    height: auto;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    padding: 8px 16px;
     border-radius: 32px;
-    background-color: #E0E3EB;
     border: none;
 }
 
-.switcher:not(:last-child) {
+.icon {
+    margin-right: 10px;
+}
+
+.popular {
+    color: #EF4444;
+    background-color: #FEE2E2;
+}
+
+.new {
+    color: #1D4ED8;
+    background-color: #DBEAFE;
+}
+
+.best {
+    color: #047857;
+    background-color: #D1FAE5;
+}
+
+.titleSlide {
+    color: var(--name);
+    font-family: 'Lexend-500';
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.price {
+    color: var(--name);
+    font-family: 'Lexend-500';
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
     margin-right: 16px;
 }
 
-.switcher:hover,
-.switcher:focus {
-    background-color: var(--active-btn)
+.name {
+    color: var(--name);
+    font-family: 'Lexend-500';
+    font-size: 18px;
+    line-height: 24px
 }
 
-.arrow {
-    color: black;
-}
-
-.switcher:hover .arrow {
-    color: white;
-}
-
-.arrowRight {
-    rotate: 180deg;
+.city {
+    color: var(--neutral);
+    font-family: 'Lexend-500';
+    font-size: 14px;
+    line-height: 22px;
 }
