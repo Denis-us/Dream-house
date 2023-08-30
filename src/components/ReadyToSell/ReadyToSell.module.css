@@ -1,6 +1,14 @@
+.swiper {
+    height: 450px;
+}
+
 .slide {
     display: flex;
     align-items: center;
+
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .head {
@@ -127,5 +135,49 @@
     width: 488px;
     height: 416px;
     border-radius: 4px;
+}
 
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.play:hover,
+.play:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.pictures {
+    position: relative;
+}
+
+.furniture {
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    display: flex;
+    align-items: flex-end; 
+}
+
+.mainFurniture {
+    border-radius: 4px;
+    max-width: 295px;
+    height: 165px;
+    margin-right: 16px;
+}
+
+.secondFurniture {
+    border-radius: 4px;
+    object-fit: cover;
+    width: 95px;
+    height: 80px;
+}
+
+.secondFurniture:not(:last-child) {
+    margin-right: 8px;
 }

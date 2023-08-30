@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination} from 'swiper/modules';
+import { Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -8,7 +8,7 @@ import 'swiper/css/scrollbar';
 
 import s from './ReviewsSwiper.module.css';
 import './ReviewsSwiper.css'
-import reviews from '../../json/reviewSlider.json';
+import reviews from '../../json/reviewSwiper.json';
 import { ReactComponent as Star } from '../../images/svg/star.svg';
 
 
@@ -36,7 +36,7 @@ const ReviewsSwiper = () => {
 
     return (
         <Swiper
-            modules={[Autoplay, Pagination]}
+            modules={[Pagination]}
             initialSlide={1}
             spaceBetween={50}
             centeredSlides={true}

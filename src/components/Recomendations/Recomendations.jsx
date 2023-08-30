@@ -8,7 +8,7 @@ import 'swiper/css/scrollbar';
 
 import s from './Recomendations.module.css';
 import './Recomendations.css';
-import recomendations from '../../json/recomendationSlider.json'
+import recomendations from '../../json/recomendationSwiper.json'
 
 import {ReactComponent as House} from '../../images/svg/house.svg';
 import {ReactComponent as Villa} from '../../images/svg/villa.svg';

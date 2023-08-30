@@ -1,61 +1,82 @@
-import React from 'react';
-import s from './ReadyToSell.module.css';
+import React, {useState} from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
-import {ReactComponent as Bed} from '../../images/svg/bed.svg'
-import {ReactComponent as Bath} from '../../images/svg/bath.svg'
-import {ReactComponent as Garage} from '../../images/svg/garage.svg'
-import {ReactComponent as Floor} from '../../images/svg/stairs.svg'
-import diane from '../../images/jpg/avatars/diane.jpg'
+import s from './ReadyToSell.module.css';
+import redyToSellSwiper from '../../json/readyToSellSwiper.json'
 import phone from '../../images/svg/phone.svg'
-import house from '../../images/png/houseSlide5.png'
+import {ReactComponent as Play} from '../../images/svg/play.svg'
+
 
 const ReadyToSell = () => {
-  
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
     return (
         <section>
-            <div class="container">
-                <div className={s.slide}>
-                    <div className={s.head}>
-                        <p className={s.pretitle}>Ready to Sell!</p>
-                        <h2 className={s.title}>Let’s Tour And See Our House!</h2>
-                        <p className={s.text}>Houses recommended by our partners that have been<br/> curated to become the home of your dreams!</p>
-                        
-                        <p className={s.titleList}>House Detail</p>
-                        <ul className={s.list}>
-                            <li className={s.listEl}>
-                                <Bed className={s.listIcon}/>
-                                <span className={s.listText}>4 Bedrooms</span>
-                            </li>
-                            <li className={s.listEl}>
-                                <Bath className={s.listIcon}/>
-                                <span className={s.listText}>2 Bathrooms</span>
-                            </li>
-                            <li className={s.listEl}>
-                                <Garage className={s.listIcon}/>
-                                <span className={s.listText}>1 Carport</span>
-                            </li>
-                            <li className={s.listEl}>
-                                <Floor className={s.listIcon}/>
-                                <span className={s.listText}>2 Floors</span>
-                            </li>
-                        </ul>
-                        <div className={s.person}>
-                            <img src={diane} alt="avatar" className={s.avatar}/>
-                            <div>
-                                <p className={s.name}>Dianne Russell</p>
-                                <p className={s.position}>Manager Director</p>
+                <Swiper
+                    modules={[Autoplay, Pagination]}
+                    initialSlide={0}
+                    slidesPerView={1}
+                    loop={true}
+                    autoplay={{ delay: isHovered ? 10000000 : 1000 }}
+                    pauseOnMouseEnter={true}
+                    className={s.swiper}
+                >
+                    {redyToSellSwiper.map((slide) => (
+                        <SwiperSlide key={slide.id} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                            <div className={s.slide}>
+                                <div className={s.head}>
+                                    <p className={s.pretitle}>Ready to Sell!</p>
+                                    <h2 className={s.title}>{slide.title}</h2>
+                                    <p className={s.text}>{slide.text}</p>
+                                    
+                                    <p className={s.titleList}>House Detail</p>
+                                    <ul className={s.list}>
+                                        {slide.detail.map((position, index) => (
+                                        <li className={s.listEl} key={index}>
+                                            <img src={position.icon} alt={position.alt} className={s.listIcon}/>
+                                            <span className={s.listText}>{position.text}</span>
+                                        </li>
+                                        ))}
+                                    </ul>
+                                    <div className={s.person}>
+                                        <img src={slide.avatar} alt={slide.name} className={s.avatar}/>
+                                        <div>
+                                            <p className={s.name}>{slide.name}</p>
+                                            <p className={s.position}>{slide.position}</p>
+                                        </div>
+                                        <button className={s.btn}>
+                                            <img src={phone} alt="phone" className={s.btnIcon}/>
+                                            <span className={s.btnText}>Contact Now</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className={s.pictures}>
+                                    <img src={slide.house} alt={slide.alt} className={s.image}/>
+                                    <Play className={s.play}/>
+                                    <div className={s.furniture}>
+                                        {slide.furniture.map((furniture, index) => (
+                                            <img key={index} src={furniture.img} alt={furniture.alt}
+                                                className={`${index === 0 ? s.mainFurniture : s.secondFurniture}`}/>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
-                            <button className={s.btn}>
-                                <img src={phone} alt="phone" className={s.btnIcon}/>
-                                <span className={s.btnText}>Contact Now</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div className={s.pictures}>
-                        <img src={house} alt='house' className={s.image}/>
-                    </div>
-                </div>
-            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
         </section>
     );
   }

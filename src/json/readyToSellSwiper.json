@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "title": "Let’s Tour And See Our House!",
+        "text": "Houses recommended by our partners that have been curated to become the home of your dreams!",
+        "detail": [
+            {
+                "icon": "images/svg/bed.svg",
+                "alt": "bedroom",
+                "text": "2 Bedrooms"
+            }, {
+                "icon": "images/svg/bath.svg",
+                "alt": "bathroom",
+                "text": "1 Bathrooms"
+            }, {
+                "icon": "images/svg/garage.svg",
+                "alt": "carport",
+                "text": "1 Carport"
+            }, {
+                "icon": "images/svg/stairs.svg",
+                "alt": "bedroom",
+                "text": "2 Floors"
+            }
+        ],
+        "avatar": "images/jpg/avatars/diane.jpg",
+        "name": "Dianne Russell",
+        "position": "Manager Director",
+        "house": "images/png/houseSlide5.png",
+        "alt": "house1",
+        "furniture": [
+            {
+                "img": "images/jpg/bed.jpg",
+                "alt": "bed"
+            }, {
+                "img": "images/jpg/flower.jpg",
+                "alt": "flower"
+            }, {
+                "img": "images/jpg/chair.jpg",
+                "alt": "chair"
+            }
+        ]
+    }, {
+        "id": 2,
+        "title": "My house sold out fast!",
+        "text": "I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!",
+        "detail": [
+            {
+                "icon": "images/svg/bed.svg",
+                "alt": "bedroom",
+                "text": "224 Bedrooms"
+            }, {
+                "icon": "images/svg/bath.svg",
+                "alt": "bathroom",
+                "text": "22 Bathrooms"
+            }, {
+                "icon": "images/svg/garage.svg",
+                "alt": "carport",
+                "text": "10 Carports"
+            }, {
+                "icon": "images/svg/stairs.svg",
+                "alt": "bedroom",
+                "text": "3 Floors"
+            }
+        ],
+        "avatar": "images/jpg/avatars/robert.jpg",
+        "name": "Robert Fox",
+        "position": "Manager",
+        "house": "images/png/hero-img.png",
+        "alt": "house2",
+        "furniture": [
+            {
+                "img": "images/jpg/villa.jpg",
+                "alt": "villa"
+            }, {
+                "img": "images/jpg/villa2.jpg",
+                "alt": "villa2"
+            }, {
+                "img": "images/jpg/villa3.jpg",
+                "alt": "villa3"
+            }
+        ]
+    }, {
+        "id": 3,
+        "title": "Best! I got the house I wanted through Hounter",
+        "text": "Through the Hounter, I can get a house for my self",
+        "detail": [
+            {
+                "icon": "images/svg/bed.svg",
+                "alt": "bedroom",
+                "text": "6 Bedrooms"
+            }, {
+                "icon": "images/svg/bath.svg",
+                "alt": "bathroom",
+                "text": "9 Bathrooms"
+            }, {
+                "icon": "images/svg/garage.svg",
+                "alt": "carport",
+                "text": "0 Carport"
+            }, {
+                "icon": "images/svg/stairs.svg",
+                "alt": "bedroom",
+                "text": "6 Floors"
+            }
+        ],
+        "avatar": "images/jpg/avatars/ronald.jpg",
+        "name": "Ronald Howard",
+        "position": "Engineer",
+        "house": "images/jpg/villa.jpg",
+        "alt": "villa1",
+        "furniture": [
+            {
+                "img": "images/jpg/moreHouse2.jpg",
+                "alt": "house2"
+            }, {
+                "img": "images/jpg/moreHouse3.jpg",
+                "alt": "house3"
+            }, {
+                "img": "images/jpg/moreHouse4.jpg",
+                "alt": "house4"
+            }
+        ]
+    }
+]
