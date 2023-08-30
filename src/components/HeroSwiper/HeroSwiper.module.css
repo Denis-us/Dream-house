@@ -2,6 +2,22 @@
     background-color: aliceblue;
     padding: 24px;
     border-radius: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.pictures {
+    position: relative;
+    width: 60px;
+    height: 55px;
+}
+
+.icon {
+    position: absolute;
+}
+
+.info {
+    margin-left: 16px;
 }
 
 .title {
@@ -16,4 +32,10 @@
     font-family: 'Lexend-400';
     font-size: 12px;
     line-height: 20px;
+}
+
+.icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
 }

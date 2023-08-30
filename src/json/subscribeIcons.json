@@ -1,0 +1,27 @@
+[
+    {
+        "type": "avatar",
+        "icon": "images/jpg/avatars/diane.jpg"
+    }, {
+        "type": "house",
+        "icon": "images/jpg/houseSlide2.jpg"
+    }, {
+        "type": "avatar",
+        "icon": "images/jpg/avatars/alis.jpg"
+    }, {
+        "type": "avatar",
+        "icon": "images/jpg/avatars/cort.jpg"
+    }, {
+        "type": "house",
+        "icon": "images/jpg/houseSlide3.jpg"
+    }, {
+        "type": "avatar",
+        "icon": "images/jpg/avatars/jake.jpg"
+    }, {
+        "type": "house",
+        "icon": "images/jpg/houseSlide4.jpg"
+    }, {
+        "type": "avatar",
+        "icon": "images/jpg/avatars/sindy.jpg"
+    }
+]

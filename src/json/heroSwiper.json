@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "icons": [
+            {
+                "icon": "images/jpg/avatars/diane.jpg",
+                "alt": "diane"
+            }, {
+                "icon": "images/jpg/avatars/jake.jpg",
+                "alt": "jake"
+            }
+        ],
+        "title": "1K+ People",
+        "text": "Successfully Getting Home"
+    }, {
+        "id": 2,
+        "icons": [
+            {
+                "icon": "images/jpg/avatars/dan.jpg",
+                "alt": "dan"
+            }, {
+                "icon": "images/jpg/avatars/cris.jpg",
+                "alt": "cris"
+            }, {
+                "icon": "images/jpg/avatars/jenny.jpg",
+                "alt": "jenny"
+            }
+        ],
+        "title": "4K+",
+        "text": "People Looking for New Homes"
+    }, {
+        "id": 3,
+        "icons": [
+            {
+                "icon": "images/jpg/houseSlide2.jpg",
+                "alt": "house1"
+            }
+        ],
+        "title": "Manhattan Style",
+        "text": "Lorem ipsum dolor sit amet"
+    },  {
+        "id": 4,
+        "icons": [
+            {
+                "icon": "images/jpg/houseSlide3.jpg",
+                "alt": "house2"
+            }
+        ],
+        "title": "New House For Your Future",
+        "text": "Lorem ipsum dolor sit amet"
+    }, {
+        "id": 5,
+        "icons": [
+            {
+                "icon": "images/jpg/avatars/robert.jpg",
+                "alt": "robert"
+            }, {
+                "icon": "images/jpg/avatars/ronald.jpg",
+                "alt": "ronald"
+            }
+        ],
+        "title": "People Looking for New Homes",
+        "text": "Lorem ipsum dolor sit amet"
+    }, {
+        "id": 6,
+        "icons": [
+            {
+                "icon": "images/jpg/houseSlide4.jpg",
+                "alt": "house3"
+            }
+        ],
+        "title": "People Looking for New Homes",
+        "text": "New House For Your Future"
+    }
+]

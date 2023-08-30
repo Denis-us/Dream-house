@@ -11,17 +11,17 @@
 
 .text {
     font-family: 'Lexend-500';
-    font-size: 18px;
+    font-size: 15px;
     line-height: 28px;
-    margin-left: 8px;
+    margin-left: 5px;
 }
 
 .pretitle {
     position: relative;
     color: var(--pretitle);
     font-family: 'Lexend-500';
-    font-size: 14px;
-    margin-bottom: 12px;
+    font-size: 10px;
+    margin-bottom: 8px;
 }
 
 .pretitle::before {
@@ -38,21 +38,20 @@
 .title {
     color: var(--title);
     font-family: 'Lexend-600';
-    font-size: 32px;
+    font-size: 22px;
 }
 
 .list {
     display: flex;
     align-items: center;
-
 }
 
 .listEl:not(:last-child) {
-    margin-right: 32px;
+    margin-right: 10px;
 }
 
 .btn {
-    padding: 12px 24px;
+    padding: 6px 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +72,7 @@
 }
 
 .btnImg {
+    width: 18px;
     color: var(--neutral)
 }
 
@@ -169,4 +169,32 @@
     font-family: 'Lexend-500';
     font-size: 14px;
     line-height: 22px;
+}
+
+@media screen and (min-width: 1200px) {
+    .text {
+        font-size: 18px;
+        margin-left: 8px;
+    }
+
+    .pretitle {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    
+    .title {
+        font-size: 32px;
+    }
+
+    .btnImg {
+        width: 24px;
+    }
+
+    .listEl:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+    }
 }

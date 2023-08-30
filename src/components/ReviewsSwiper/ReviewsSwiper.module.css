@@ -28,7 +28,7 @@
     bottom: -50px;
     background-color: white;
     border-radius: 16px;
-    width: 610px;
+    width: 350px;
     padding: 32px;
 
 }
@@ -51,9 +51,15 @@
 .commentInfo {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-family: 'Lexend-500';
     font-size: 14px;
     line-height: 22px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
 }
 
 .avatar {
@@ -69,4 +75,24 @@
 
 .position {
     color: var(--neutral);
+}
+
+.grade {
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    color: #3C4563;
+    font-family: 'Lexend-600';
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+    .slideComment {
+        width: 610px;
+        padding: 32px;
+    }
 }

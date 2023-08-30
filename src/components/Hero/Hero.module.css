@@ -46,6 +46,7 @@
 
 .heroSlider {
     position: relative;
+    pointer-events: none;
 }
 
 .swiper {

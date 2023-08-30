@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation} from 'swiper/modules';
+import { Autoplay, Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -20,6 +20,25 @@ import { ReactComponent as Wallet } from '../../images/svg/wallet.svg';
 
 const Recomendations = () => {
     const [selectedType, setSelectedType] = useState('');
+    const [slidesPerView, setSlidesPerView] = useState(1);
+      
+    const handleResize = () => {
+        const windowWidth = window.innerWidth;
+    
+        if (windowWidth >= 1920) {
+            setSlidesPerView(4.6);
+        } else if (windowWidth >= 1440) {
+            setSlidesPerView(3.5);
+        } else if (windowWidth >= 1200) {
+            setSlidesPerView(3.2);
+        } else if (windowWidth >= 768) {
+            setSlidesPerView(2);
+        }
+    };
+      
+    useEffect(() => {
+        handleResize();
+    }, []);
 
     return (
         <section>
@@ -58,11 +77,11 @@ const Recomendations = () => {
                         </button>
                     </div>
                 </div>
-            
+                </div>
                 <Swiper
-                    modules={[Navigation]}
+                    modules={[Autoplay, Navigation]}
                     spaceBetween={40}
-                    slidesPerView={3.2}
+                    slidesPerView={slidesPerView}
 
                     navigation={{
                         nextEl: '.btnNext',
@@ -110,7 +129,6 @@ const Recomendations = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </div>
         </section>
     );
   }

@@ -1,12 +1,12 @@
 .btnSliderRecomend {
-    padding: 12px 16px;
+    padding: 6px 8px;
     border-radius: 32px;
     background-color: #E0E3EB;
     border: none; 
 }
 
 .btnSliderRecomend:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 8px;
 }
 
 .btnSliderRecomend:hover,
@@ -24,4 +24,14 @@
 
 .arrow.right {
     rotate: 180deg;
+}
+
+@media screen and (min-width: 1200px) {
+    .btnSliderRecomend {
+        padding: 12px 16px;
+    }
+
+    .btnSliderRecomend:not(:last-child) {
+        margin-right: 16px;
+    }  
 }
