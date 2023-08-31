@@ -1,9 +1,8 @@
 .form {
-    padding: 4px 4px 4px 24px;
+    padding: 4px 4px 4px 15px;
     border-radius: 32px;
     border: 1px solid #E0E3EB;
     margin-top: 32px;
-    width: 495px;
     background-color: white;
 }
 
@@ -16,7 +15,6 @@
 .input {
     outline: none;
     border: none;
-    width: 300px;
 }
 
 .input::placeholder {
@@ -28,13 +26,13 @@
 
 .btn {
     font-family: 'Lexend-600';
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 16px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 16px;
+    padding: 8px 12px;
     border-radius: 32px;
     border: 1px solid var(--active-btn);
     background-color: var(--active-btn);
@@ -55,4 +53,21 @@
     font-size: 14px;
     line-height: 22px;
     margin-left: 44px;
+}
+
+@media screen and (min-width: 1024px) {
+    .form {
+        padding: 4px 4px 4px 24px;
+        width: 495px;
+    }
+
+    .input {
+        width: 300px;
+    }
+
+    .btn {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 12px 16px;
+    }
 }

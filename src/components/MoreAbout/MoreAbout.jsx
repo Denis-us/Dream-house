@@ -68,16 +68,19 @@ const MoreAbout = () => {
                     </ul>
                     <article className={s.article}>
                         <img src={house4} alt="house4" className={s.articleImg}/>
-                        <div className={s.person}>
-                            <img src={avatar4} alt="avatar4" className={s.avatar}/>
-                            <span className={s.name}>Cameron Williamson</span>
+                        <div className={s.articleInfo}>
+                            <div className={s.person}>
+                                <img src={avatar4} alt="avatar4" className={s.avatar}/>
+                                <span className={s.name}>Cameron Williamson</span>
+                            </div>
+                            <p className={s.articleTitle}>12 Things To Know Before Buying A House</p>
+                            <p className={s.text}>Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
+                            <div className={s.time}>
+                                <Time className={s.clock}/>
+                                <span className={s.timeInfo}>8 min read | 25 Apr 2021</span>
+                            </div>
                         </div>
-                        <p className={s.articleTitle}>12 Things To Know Before Buying A House</p>
-                        <p className={s.text}>Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
-                        <div className={s.time}>
-                            <Time className={s.clock}/>
-                            <span className={s.timeInfo}>8 min read | 25 Apr 2021</span>
-                        </div>
+                        
                     </article>
                 </div>
             </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroSwiper from '../HeroSwiper/HeroSwiper';
-import FormSubscribe from '../FormSubscribe/FormSubscribe';
 import s from './Hero.module.css';
 
 import marker from '../../images/svg/marker.svg'
@@ -24,7 +23,19 @@ const Hero = () => {
                         <h1 className={s.title}>Find The Place To<br/>Live <span className={s.titlePart}>Your Dreams</span><br/>Easily Here</h1>
                         <p className={s.paragraph}>Everything you need about finding your place to live will be here, where it will be easier for you</p>
 
-                        <FormSubscribe icoInput={marker} placeholder={'Search for the location you want!'} btn={'Search '} icoBtn={arrow}/>
+                        <form className={s.form}>
+                            <div className={s.wrapper}>
+                                <img src={marker} alt="marker" className={s.marker}/>
+                                <input
+                                    className={s.input}
+                                    placeholder='Search for the location you want!'
+                                />
+                                <button className={s.btn} type="submit">
+                                    <span>Search </span>
+                                    <img src={arrow} alt="arrow" className={s.arrow} />
+                                </button>
+                            </div>
+                        </form>
 
                         <p className={`${s.paragraph} ${s.partners}`}>Our Partnership</p>
                         <ul className={s.list}>
