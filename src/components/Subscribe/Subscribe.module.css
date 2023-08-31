@@ -1,5 +1,5 @@
 .wrapper {
-    padding: 60px 0px;
+    padding: 60px 10px;
     border-radius: 32px;
     background: linear-gradient(to bottom right, rgba(119, 172, 241, 0.822), #e5f8f6, rgb(222, 205, 255));
     display: flex;
@@ -15,12 +15,12 @@
 .title {
     color: var(--title);
     font-family: 'Lexend-600';
-    font-size: 22px;
-    line-height: 30px; 
+    font-size: 16px;
+    line-height: 20px; 
 }
 
 .icons {
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: wrap;
     height: 150px;
@@ -47,10 +47,12 @@
     }
 
     .icons {
+        display: flex;
         height: 200px;
     }
 
     .icon {
+        display: flex;
         width: 36px;
         height: 36px;
     }

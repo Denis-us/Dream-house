@@ -1,46 +1,40 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Logo from '../Logo/Logo';
+import BurgerMenu from '../burgerMenu/BurgerMenu';
+import Navigation from '../Navigation/Navigation';
 import s from './Header.module.css';
-
-import {ReactComponent as Arrow} from '../../images/svg/arrowRight.svg'
 
 
 const Header = () => {
   
+    const [isClicked, setIsClicked] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200);
+      
+    const handleClick = () => {
+        setIsClicked(!isClicked);
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 1200);
+        };
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <header className={s.header}>
             <div class="container">
               <div class={s.siteNav}>
                 <Logo/>
                 
-                <nav className={s.menu}>
-                  <ul class={s.list}>
-                      <li class={s.listEl}>
-                        <a href="/" class={s.link}>
-                          <span>About Us</span>
-                        </a>
-                      </li>
-                      <li class={s.listEl}>
-                        <a href="/" class={s.link}>
-                          <span>Article</span>
-                        </a>
-                      </li>
-                      <li class={`${s.listEl} ${s.dropMenu}`}>
-                        <a href="/" class={s.link}>
-                          <span>Property</span>
-                          <Arrow className={s.arrow}/>
-                        </a>
-                        <ul class={s.dropdown}>
-                          <li class={s.dropdownItem}><a href="/" class={s.link}>House</a></li>
-                          <li class={s.dropdownItem}><a href="/" class={s.link}>Villa</a></li>
-                          <li class={s.dropdownItem}><a href="/" class={s.link}>Apartment</a></li>
-                        </ul>
-                      </li>
-                      
-                  </ul>
-
-                  <button class={s.btnNav}>Sign Up!</button>
-                </nav>
+                <BurgerMenu isClicked={isClicked} handleClick={handleClick}/>
+                <Navigation isClicked={!isMobile || isClicked}/>
+                
               </div>
             </div>
         </header>

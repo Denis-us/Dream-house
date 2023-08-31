@@ -1,25 +1,18 @@
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 230px;
-    padding-bottom: 45px;
+    padding-top: 100px;
     overflow: hidden;
 }
 
 .heroMain {
-    width: 50%;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .title {
     font-family: 'Lexend-600';
     font-size: 30px;
     line-height: 35px;
-
-    
     color: var(--title);
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .titlePart {
@@ -36,11 +29,21 @@
 }
 
 .form {
+    box-sizing: border-box;
     padding: 4px 4px 4px 15px;
     border-radius: 32px;
     border: 1px solid #E0E3EB;
-    margin-top: 32px;
+    margin-top: 16px;
     background-color: white;
+    max-width: 400px;
+    height: 56px;
+    transition: border-color 0.3s ease;
+}
+
+.form:hover,
+.form:focus,
+.form:focus-within {
+    border-color: var(--active-btn);
 }
 
 .wrapper {
@@ -57,16 +60,18 @@
 .input {
     outline: none;
     border: none;
+    width: 40%;
 }
 
 .input::placeholder {
     color: #888B97;
     font-family: 'Lexend-500';
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 10px;
+    line-height: 16px;
 }
 
 .btn {
+    box-sizing: border-box;
     font-family: 'Lexend-600';
     font-size: 12px;
     line-height: 16px;
@@ -88,11 +93,12 @@
 }
 
 .partners {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .listEl:not(:last-child) {
@@ -104,30 +110,37 @@
     pointer-events: none;
 }
 
-.swiper {
-    width: 675px;
-    margin-left: 45px;
-}
-
 .houseImg {
+    display: none;
     position: absolute;
     bottom: -40px;
 }
 
 .trianglesImg {
+    display: none;
     position: absolute;
     top: -440px;
     left: 80px;
 }
 
 @media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 230px;
+        padding-bottom: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
     .heroMain {
-        margin-right: 100px;
+        width: 50%;
+        padding-right: 100px;
     }
 
     .title {
         font-size: 40px;
         line-height: 50px;
+        margin-bottom: 24px;
     }
 
     .paragraph {
@@ -136,6 +149,7 @@
     }
 
     .form {
+        margin-top: 32px;
         padding: 4px 4px 4px 24px;
         width: 495px;
     }
@@ -143,24 +157,50 @@
     .marker {
         width: 24px;
         height: 24px;
+        margin-right: 16px;
     }
 
     .input {
         width: 300px;
     }
 
-    .btn {
+    .input::placeholder {
         font-size: 14px;
         line-height: 22px;
+    }
+
+    .btn {
+        font-size: 14px;
         padding: 12px 16px;
     }
 
     .arrow {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .partners {
+        margin-top: 32px;
+    }
+
+    .list {
+        flex-wrap: nowrap;
     }
 
     .listEl:not(:last-child) {
         margin-right: 32px;
+    }
+
+    .houseImg {
+        display: block;
+    }
+    
+    .trianglesImg {
+        display: block;
+    }
+
+    .swiper {
+        width: 675px;
+        margin-left: 45px;
     }
 }

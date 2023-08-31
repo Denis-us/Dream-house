@@ -45,41 +45,44 @@ const Recomendations = () => {
     return (
         <section>
             <div class="container">
-                <div className={s.nav}>
+                <div className={s.header}>
                     <div className={s.head}>
                         <p className={s.pretitle}>Our Recommendation</p>
                         <h2 className={s.title}>Featured House</h2>
                     </div>
-                    <ul className={s.list}>
-                        <li className={s.listEl} onClick={() => setSelectedType('house')}>
-                            <button className={s.btn}>
-                                <House className={s.btnImg}/>
-                                <p className={s.text}>House</p>
+                    <div className={s.nav}>
+                        <ul className={s.list}>
+                            <li className={s.listEl} onClick={() => setSelectedType('house')}>
+                                <button className={s.btn}>
+                                    <House className={s.btnImg}/>
+                                    <p className={s.text}>House</p>
+                                </button>
+                            </li>
+                            <li className={s.listEl} onClick={() => setSelectedType('villa')}>
+                                <button className={s.btn}>
+                                    <Villa className={s.btnImg}/>
+                                    <p className={s.text}>Villa</p>
+                                </button>
+                            </li>
+                            <li className={s.listEl} onClick={() => setSelectedType('apartment')}>
+                                <button className={s.btn}>
+                                    <Apartment className={s.btnImg}/>
+                                    <p className={s.text}>Apartment</p>
+                                </button>
+                            </li>
+                        </ul>
+                        <div className={s.switches}>
+                            <button class="btnSliderRecomend btnPrev">
+                                <Arrow class="arrow left"/>
                             </button>
-                        </li>
-                        <li className={s.listEl} onClick={() => setSelectedType('villa')}>
-                            <button className={s.btn}>
-                                <Villa className={s.btnImg}/>
-                                <p className={s.text}>Villa</p>
+                            <button class="btnSliderRecomend btnNext">
+                                <Arrow class="arrow right"/>
                             </button>
-                        </li>
-                        <li className={s.listEl} onClick={() => setSelectedType('apartment')}>
-                            <button className={s.btn}>
-                                <Apartment className={s.btnImg}/>
-                                <p className={s.text}>Apartment</p>
-                            </button>
-                        </li>
-                    </ul>
-                    <div className={s.switches}>
-                        <button class="btnSliderRecomend btnPrev">
-                            <Arrow class="arrow left"/>
-                        </button>
-                        <button class="btnSliderRecomend btnNext">
-                            <Arrow class="arrow right"/>
-                        </button>
+                        </div>
                     </div>
+                    
                 </div>
-                </div>
+            </div>
                 <Swiper
                     modules={[Autoplay, Navigation]}
                     spaceBetween={40}

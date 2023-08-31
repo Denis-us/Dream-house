@@ -1,9 +1,18 @@
 .form {
+    box-sizing: border-box;
     padding: 4px 4px 4px 15px;
     border-radius: 32px;
+    height: 56px;
     border: 1px solid #E0E3EB;
-    margin-top: 32px;
+    margin-top: 16px;
     background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+.form:hover,
+.form:focus,
+.form:focus-within {
+    border-color: var(--active-btn);
 }
 
 .wrapper {
@@ -15,16 +24,18 @@
 .input {
     outline: none;
     border: none;
+    width: 40%;
 }
 
 .input::placeholder {
     color: #888B97;
     font-family: 'Lexend-500';
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 10px;
+    line-height: 16px;
 }
 
 .btn {
+    box-sizing: border-box;
     font-family: 'Lexend-600';
     font-size: 12px;
     line-height: 16px;
@@ -44,7 +55,7 @@
 }
 
 .invalid {
-    border: 1px solid red;
+    border: 1px solid red !important;
 }
   
 .errorMsg {
@@ -58,11 +69,17 @@
 @media screen and (min-width: 1200px) {
     .form {
         padding: 4px 4px 4px 24px;
-        width: 495px;
+        max-width: 495px;
+        margin-top: 32px;
     }
 
     .input {
         width: 300px;
+    }
+
+    .input::placeholder {
+        font-size: 14px;
+        line-height: 22px;
     }
 
     .btn {

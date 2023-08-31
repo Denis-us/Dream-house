@@ -33,23 +33,28 @@ button {
 }
 
 section {
-  margin-bottom: 120px
+  padding: 0px 20px;
+  margin-bottom: 60px
 }
 
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: 768px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
+  section {
+    margin-bottom: 120px
+  }
+
   .container {
-    width: 1200px;
+    width: 1180px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1440px;
+    width: 1420px;
   }
 }

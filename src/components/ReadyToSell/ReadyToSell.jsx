@@ -51,11 +51,13 @@ const ReadyToSell = () => {
                                         </li>
                                         ))}
                                     </ul>
-                                    <div className={s.person}>
-                                        <img src={slide.avatar} alt={slide.name} className={s.avatar}/>
-                                        <div>
-                                            <p className={s.name}>{slide.name}</p>
-                                            <p className={s.position}>{slide.position}</p>
+                                    <div className={s.slideBottom}>
+                                        <div className={s.person}>
+                                            <img src={slide.avatar} alt={slide.name} className={s.avatar}/>
+                                            <div>
+                                                <p className={s.name}>{slide.name}</p>
+                                                <p className={s.position}>{slide.position}</p>
+                                            </div>
                                         </div>
                                         <button className={s.btn}>
                                             <img src={phone} alt="phone" className={s.btnIcon}/>

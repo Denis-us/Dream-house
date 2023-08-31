@@ -1,19 +1,13 @@
-.swiper {
-    height: 450px;
-}
-
 .slide {
-    display: flex;
-    align-items: center;
-
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .head {
-    margin-left: 40px;
-    margin-right: 50px;
+    margin-bottom: 40px;
 }
 
 .pretitle {
@@ -25,6 +19,7 @@
 }
 
 .pretitle::before {
+    display: none;
     position: absolute;
     left: -40px;
     top: 50%;
@@ -61,7 +56,7 @@
 .list {
     display: flex;
     flex-wrap: wrap;
-    width: 350px;
+    width: 100%;
     border-bottom: 2px solid#F0F3FD;
     margin-bottom: 22px;
     padding-bottom: 10px;
@@ -86,16 +81,23 @@
     font-size: 12px;
 }
 
+.slideBottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .person {
     display: flex;
     align-items: center;
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 56px;
-    margin-right: 18px;
+    margin-right: 12px;
 }
 
 .name {
@@ -115,13 +117,13 @@
 .btn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 8px 12px;
     background-color: var(--active-btn);
     border-radius: 32px;
     border: none;
     color: white;
-    margin-left: 40px;
+    margin-left: 8px;
 }
 
 .btnIcon {
@@ -134,10 +136,16 @@
     line-height: 16px;
 }
 
+.pictures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .image {
-    width: 400px;
-    height: 350px;
+    width: 80%;
     border-radius: 4px;
+    object-fit: cover;
 }
 
 .play {
@@ -160,25 +168,27 @@
 }
 
 .furniture {
+    display: none;
     position: absolute;
-    bottom: -20px;
-    left: -20px;
-    display: flex;
+    bottom: -40px;
+    left: -40px;
     align-items: flex-end; 
 }
 
 .mainFurniture {
+    display: none;
     border-radius: 4px;
-    max-width: 240px;
-    height: 120px;
-    margin-right: 10px;
+    max-width: 295px;
+    height: 165px;
+    margin-right: 16px;
 }
 
 .secondFurniture {
+    display: none;
     border-radius: 4px;
     object-fit: cover;
-    width: 70px;
-    height: 60px;
+    width: 95px;
+    height: 80px;
 }
 
 .secondFurniture:not(:last-child) {
@@ -186,17 +196,30 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .swiper {
+        height: 450px;
+    }
+
     .slide {
         width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
     }
 
     .head {
+        margin-left: 40px;
         margin-right: 150px;
+        margin-bottom: 0px;
     }
 
     .pretitle {
         font-size: 14px;
         margin-bottom: 12px;
+    }
+
+    .pretitle::before {
+        display: block;
     }
     
     .title {
@@ -254,7 +277,6 @@
 
     .btn {
         padding: 12px 16px;
-        margin-left: 60px;
     }
 
     .btnIcon {
@@ -272,19 +294,15 @@
     }
 
     .furniture {
-        bottom: -40px;
-        left: -40px;
+        display: flex;
     }
 
     .mainFurniture {
-        max-width: 295px;
-        height: 165px;
-        margin-right: 16px;
+        display: block;
     }
 
     .secondFurniture {
-        width: 95px;
-        height: 80px;
+        display: block;
     }
 
     .secondFurniture:not(:last-child) {

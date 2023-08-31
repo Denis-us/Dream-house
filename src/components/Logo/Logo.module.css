@@ -2,14 +2,15 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    z-index: 2;
 }
 
 .text {
     font-family: 'Lexend-700';
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 16px;
     color: var(--title);
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 @media screen and (min-width: 1200px) {

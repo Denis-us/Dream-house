@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Autoplay} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,10 +10,10 @@ import s from './HeroSwiper.module.css';
 import heroSlider from '../../json/heroSwiper.json'
 
 const HeroSwiper = () => {
-  
+
     return (
             <Swiper
-                modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Autoplay]}
                 spaceBetween={15}
                 loop={true}
                 autoplay={{

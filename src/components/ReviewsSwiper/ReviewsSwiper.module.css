@@ -1,14 +1,10 @@
-.swiper {
-    height: 600px;
-}
-
 .slide {
     position: relative;
-    height: 505px;
-    
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .imgWrapper {
@@ -25,11 +21,11 @@
 
 .slideComment {
     position: absolute;
-    bottom: -50px;
+    bottom: 0px;
     background-color: white;
     border-radius: 16px;
-    width: 400px;
-    padding: 32px;
+    width: 80%;
+    padding: 16px;
 }
 
 .title {
@@ -95,7 +91,18 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .swiper {
+        height: 600px;
+    }
+
+    .slide {
+        position: relative;
+        height: 505px;
+        margin-bottom: 0px;
+    }
+
     .slideComment {
+        bottom: -50px;
         width: 610px;
         padding: 32px;
     }

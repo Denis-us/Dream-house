@@ -1,6 +1,6 @@
 .slide {
     background-color: aliceblue;
-    padding: 24px;
+    padding: 15px;
     border-radius: 32px;
     display: flex;
     align-items: center;
@@ -8,8 +8,8 @@
 
 .pictures {
     position: relative;
-    width: 60px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
 }
 
 .icon {
@@ -17,25 +17,56 @@
 }
 
 .info {
-    margin-left: 16px;
+    margin-left: 10px;
 }
 
 .title {
     color: var(--title);
     font-family: 'Lexend-600';
-    font-size: 16px;
-    line-height: 24px; 
+    font-size: 12px;
+    line-height: 18px; 
 }
 
 .paragraph {
     color: var(--text);
     font-family: 'Lexend-400';
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 10px;
+    line-height: 16px;
 }
 
 .icon {
-    width: 56px;
-    height: 56px;
+    width: 45px;
+    height: 45px;
     border-radius: 56px;
+}
+
+@media screen and (min-width: 1200px) {
+    .slide {
+        padding: 24px;
+    }
+
+    .pictures {
+        width: 60px;
+        height: 55px;
+    }
+
+    .info {
+        margin-left: 16px;
+    }
+
+    .title {
+        font-size: 16px;
+        line-height: 24px; 
+    }
+
+    .paragraph {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .icon {
+        width: 56px;
+        height: 56px;
+    }
+
 }

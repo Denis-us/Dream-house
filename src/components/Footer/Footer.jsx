@@ -10,7 +10,7 @@ import {ReactComponent as Instagrem} from '../../images/svg/instagram.svg';
 const Footer = () => {
   
     return (
-        <footer>
+        <footer className={s.footer}>
             <div class="container">
                 <div className={s.footerMain}>
                     <div className={s.footerSocials}>
@@ -34,29 +34,27 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <ul className={s.footerInfo}>
-                            <li className={s.infoEl}>
-                                <h3 className={s.infoTitle}>Property</h3>
-                                <a href='/' className={s.infoLink}>House</a>
-                                <a href='/' className={s.infoLink}>Apartment</a>
-                                <a href='/' className={s.infoLink}>Villa</a>
-                            </li>
-                            <li className={s.infoEl}>
-                                <h3 className={s.infoTitle}>Article</h3>
-                                <a href='/' className={s.infoLink}>New Article</a>
-                                <a href='/' className={s.infoLink}>Popular Article</a>
-                                <a href='/' className={s.infoLink}>Most Read</a>
-                                <a href='/' className={s.infoLink}>Tips & Tricks</a>
-                            </li>
-                            <li className={s.infoEl}>
-                                <h3 className={s.infoTitle}>Contact</h3>
-                                <a href='/' className={s.infoLink}>2464 Royal Ln. Mesa, New Jersey 45463</a>
-                                <a href='tel:6715550110' className={s.infoLink}>(671) 555-0110</a>
-                                <a href='mailto:info@hounter.com' className={s.infoLink}>info@hounter.com</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul className={s.footerInfo}>
+                        <li className={s.infoEl}>
+                            <h3 className={s.infoTitle}>Property</h3>
+                            <a href='/' className={s.infoLink}>House</a>
+                            <a href='/' className={s.infoLink}>Apartment</a>
+                            <a href='/' className={s.infoLink}>Villa</a>
+                        </li>
+                        <li className={s.infoEl}>
+                            <h3 className={s.infoTitle}>Article</h3>
+                            <a href='/' className={s.infoLink}>New Article</a>
+                            <a href='/' className={s.infoLink}>Popular Article</a>
+                            <a href='/' className={s.infoLink}>Most Read</a>
+                            <a href='/' className={s.infoLink}>Tips & Tricks</a>
+                        </li>
+                        <li className={s.infoEl}>
+                            <h3 className={s.infoTitle}>Contact</h3>
+                            <a href='/' className={s.infoLink}>2464 Royal Ln. Mesa, New Jersey 45463</a>
+                            <a href='tel:6715550110' className={s.infoLink}>(671) 555-0110</a>
+                            <a href='mailto:info@hounter.com' className={s.infoLink}>info@hounter.com</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>

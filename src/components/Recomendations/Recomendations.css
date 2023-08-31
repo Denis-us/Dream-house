@@ -5,10 +5,6 @@
     border: none; 
 }
 
-.btnSliderRecomend:not(:last-child) {
-    margin-right: 8px;
-}
-
 .btnSliderRecomend:hover,
 .btnSliderRecomend:focus {
     background-color: var(--active-btn)

@@ -11,6 +11,7 @@
 }
 
 .pretitle::before {
+    display: none;
     position: absolute;
     top: -8px;
     left: 50%;
@@ -56,6 +57,7 @@
 .listEl {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .listEl:not(:last-child) {
@@ -66,7 +68,7 @@
     width: 200px;
     height: 144px;
     border-radius: 16px;
-    margin-right: 25px;
+    margin-bottom: 15px;
 }
 
 .person {
@@ -118,6 +120,7 @@
 .article {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .articleInfo {
@@ -127,9 +130,10 @@
 }
 
 .articleImg {
-    width: 350px;
+    width: 100%;
     border-radius: 16px;
     margin-right: 25px;
+    margin-bottom: 24px;
 }
 
 .articleTitle {
@@ -154,6 +158,10 @@
         margin-bottom: 12px;
     }
 
+    .pretitle::before {
+        display: block;
+    }
+
     .mainTitle {
         font-size: 32px;
         margin-bottom: 24px;
@@ -168,6 +176,10 @@
     .list {
         margin-bottom: 0px;
     }
+
+    .listEl {
+        flex-direction: row;
+    }
     
     .listEl:not(:last-child) {
         margin-bottom: 44px;
@@ -175,6 +187,7 @@
 
     .listImg {
         margin-right: 32px;
+        margin-bottom: 0px;
     }
 
     .articles {
@@ -199,7 +212,7 @@
     }
 
     .article {
-        display: block;
+        flex-direction: column;
         width: 560px;
         margin-left: 65px;
     }
@@ -211,7 +224,6 @@
     .articleImg {
         width: 560px;
         height: 280px;
-        margin-bottom: 24px;
         margin-right: 0px;
     }
 
