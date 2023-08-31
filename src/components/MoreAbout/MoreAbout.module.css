@@ -103,14 +103,16 @@
 }
 
 .clock {
+    width: 18px;
+    height: 18px;
     margin-right: 8px;
 }
 
 .timeInfo {
     color: var(--neutral);
     font-family: 'Lexend-400';
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 10px;
+    line-height: 18px;
 }
 
 .article {
@@ -141,7 +143,7 @@
 .text {
     color: var(--text);
     font-family: 'Lexend-400';
-    font-size: 12px;
+    font-size: 10px;
     line-height: 18px;
     margin-bottom: 12px;
 }
@@ -191,6 +193,8 @@
     }
 
     .clock {
+        width: 24px;
+        height: 24px;
         margin-right: 12px;
     }
 
@@ -220,5 +224,10 @@
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 16px;
+    }
+
+    .timeInfo {
+        font-size: 14px;
+        line-height: 24px;
     }
 }

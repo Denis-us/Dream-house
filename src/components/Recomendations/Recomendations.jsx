@@ -24,15 +24,17 @@ const Recomendations = () => {
       
     const handleResize = () => {
         const windowWidth = window.innerWidth;
-    
+
         if (windowWidth >= 1920) {
             setSlidesPerView(4.6);
         } else if (windowWidth >= 1440) {
             setSlidesPerView(3.5);
         } else if (windowWidth >= 1200) {
             setSlidesPerView(3.2);
+        } else if (windowWidth >= 1024) {
+            setSlidesPerView(3);
         } else if (windowWidth >= 768) {
-            setSlidesPerView(2);
+            setSlidesPerView(2.4);
         }
     };
       

@@ -86,11 +86,11 @@
     align-items: center;
     justify-content: center;
 
-    width: 340px;
-    height: 380px;
+    width: 280px;
+    height: 300px;
     border-radius: 24px;
     overflow: hidden;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .img {
@@ -103,15 +103,15 @@
     justify-content: center;
 
     position: absolute;
-    bottom: 16px;
-    left: 16px;
-    padding: 8px 16px;
+    bottom: 10px;
+    left: 10px;
+    padding: 6px 12px;
     border-radius: 32px;
     border: none;
 }
 
 .icon {
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 .popular {
@@ -132,17 +132,17 @@
 .titleSlide {
     color: var(--name);
     font-family: 'Lexend-500';
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 6px;
 }
 
 .price {
     color: var(--name);
     font-family: 'Lexend-500';
-    font-size: 20px;
-    line-height: 32px;
-    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 18px;
 }
 
 .person {
@@ -151,24 +151,24 @@
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 40px;
-    margin-right: 16px;
+    margin-right: 10px;
 }
 
 .name {
     color: var(--name);
     font-family: 'Lexend-500';
-    font-size: 18px;
-    line-height: 24px
+    font-size: 12px;
+    line-height: 18px
 }
 
 .city {
     color: var(--neutral);
     font-family: 'Lexend-500';
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 10px;
+    line-height: 18px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -186,10 +186,6 @@
         font-size: 32px;
     }
 
-    .btnImg {
-        width: 24px;
-    }
-
     .listEl:not(:last-child) {
         margin-right: 32px;
     }
@@ -197,4 +193,52 @@
     .btn {
         padding: 12px 24px;
     }
+
+    .btnImg {
+        width: 24px;
+    }
+
+    .card {
+        width: 340px;
+        height: 380px;
+        margin-bottom: 24px;
+    }
+
+    .category {
+        bottom: 16px;
+        left: 16px;
+        padding: 8px 16px;
+    }
+
+    .icon {
+        margin-right: 10px;
+    }
+
+    .titleSlide {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    .price {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+    }
+
+    .name {
+        font-size: 18px;
+        line-height: 24px
+    }
+
+    .city {
+        font-size: 14px;
+        line-height: 22px;
+    }  
 }

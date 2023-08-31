@@ -1,14 +1,21 @@
 .logo {
-    width: 115px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     cursor: pointer;
 }
 
 .text {
     font-family: 'Lexend-700';
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     color: var(--title);
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    .text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 12px;
+    }
 }

@@ -15,29 +15,50 @@
 .title {
     color: var(--title);
     font-family: 'Lexend-600';
-    font-size: 32px;
-    line-height: 48px; 
+    font-size: 22px;
+    line-height: 30px; 
 }
 
 .icons {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 200px;
+    height: 150px;
 }
 
 .icon {
-    width: 36px;
-    height: 36px;
+    width: 24px;
+    height: 24px;
     border-radius: 36px;
     margin: 20px;
 }
 
 .iconHouse {
-    width: 81px;
-    height: 81px;
+    width: 40px;
+    height: 40px;
     border-radius: 24px;
     margin: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    .title {
+        font-size: 32px;
+        line-height: 48px; 
+    }
+
+    .icons {
+        height: 200px;
+    }
+
+    .icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .iconHouse {
+        width: 81px;
+        height: 81px;
+    }
 }
 
 @keyframes floatAnimation1 {

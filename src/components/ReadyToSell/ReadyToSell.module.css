@@ -6,21 +6,22 @@
     display: flex;
     align-items: center;
 
-    width: 1200px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .head {
     margin-left: 40px;
-    margin-right: 150px;
+    margin-right: 50px;
 }
 
 .pretitle {
     position: relative;
     color: var(--pretitle);
     font-family: 'Lexend-500';
-    font-size: 14px;
+    font-size: 10px;
+    margin-bottom: 8px;
 }
 
 .pretitle::before {
@@ -37,50 +38,52 @@
 .title {
     color: var(--title);
     font-family: 'Lexend-600';
-    font-size: 32px;
+    font-size: 22px;
     margin-bottom: 16px;
 }
 
 .text {
     color: var(--text);
     font-family: 'Lexend-400';
-    font-size: 16px;
-    line-height: 28px;
-    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 10px;
 }
 
 .titleList {
     color: var(--title);
     font-family: 'Lexend-600';
-    font-size: 16px;
-    line-height: 28px;
-    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 10px;
 }
 
 .list {
     display: flex;
     flex-wrap: wrap;
-    width: 440px;
+    width: 350px;
     border-bottom: 2px solid#F0F3FD;
-    margin-bottom: 32px;
-    padding-bottom: 16px;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
 }
 
 .listEl {
     display: flex;
     align-items: center;
-    width: 200px;
-    margin-bottom: 16px;
+    width: 150px;
+    margin-bottom: 10px;
 }
 
 .listIcon {
-    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 }
 
 .listText {
     color: var(--neutral-700, #3C4563);
     font-family: 'Lexend-500';
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .person {
@@ -89,51 +92,51 @@
 }
 
 .avatar {
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
     border-radius: 56px;
-    margin-right: 24px;
+    margin-right: 18px;
 }
 
 .name {
     color: var(--name);
     font-family: 'Lexend-500';
-    font-size: 18px;
-    line-height: 24px
+    font-size: 12px;
+    line-height: 18px
 }
 
 .position {
     color: var(--neutral);
     font-family: 'Lexend-500';
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 10px;
+    line-height: 18px;
 }
 
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 16px;
+    padding: 8px 12px;
     background-color: var(--active-btn);
     border-radius: 32px;
     border: none;
     color: white;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
 .btnIcon {
-    margin-right: 16px;
+    margin-right: 8px;
 }
 
 .btnText {
     font-family: 'Lexend-600';
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .image {
-    width: 488px;
-    height: 416px;
+    width: 400px;
+    height: 350px;
     border-radius: 4px;
 }
 
@@ -158,26 +161,133 @@
 
 .furniture {
     position: absolute;
-    bottom: -40px;
-    left: -40px;
+    bottom: -20px;
+    left: -20px;
     display: flex;
     align-items: flex-end; 
 }
 
 .mainFurniture {
     border-radius: 4px;
-    max-width: 295px;
-    height: 165px;
-    margin-right: 16px;
+    max-width: 240px;
+    height: 120px;
+    margin-right: 10px;
 }
 
 .secondFurniture {
     border-radius: 4px;
     object-fit: cover;
-    width: 95px;
-    height: 80px;
+    width: 70px;
+    height: 60px;
 }
 
 .secondFurniture:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 6px;
+}
+
+@media screen and (min-width: 1200px) {
+    .slide {
+        width: 1200px;
+    }
+
+    .head {
+        margin-right: 150px;
+    }
+
+    .pretitle {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    
+    .title {
+        font-size: 32px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    .titleList {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+
+    .list {
+        width: 440px;
+        margin-bottom: 32px;
+        padding-bottom: 16px;
+    }
+
+    .listEl {
+        width: 200px;
+        margin-bottom: 16px;
+    }
+
+    .listIcon {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+    }
+
+    .listText {
+        font-size: 16px;
+    }
+
+    .avatar {
+        width: 56px;
+        height: 56px;
+        margin-right: 24px;
+    }
+
+    .name {
+        font-size: 18px;
+        line-height: 24px
+    }
+
+    .position {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .btn {
+        padding: 12px 16px;
+        margin-left: 60px;
+    }
+
+    .btnIcon {
+        margin-right: 16px;
+    }
+
+    .btnText {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .image {
+        width: 488px;
+        height: 416px;
+    }
+
+    .furniture {
+        bottom: -40px;
+        left: -40px;
+    }
+
+    .mainFurniture {
+        max-width: 295px;
+        height: 165px;
+        margin-right: 16px;
+    }
+
+    .secondFurniture {
+        width: 95px;
+        height: 80px;
+    }
+
+    .secondFurniture:not(:last-child) {
+        margin-right: 8px;
+    }
 }

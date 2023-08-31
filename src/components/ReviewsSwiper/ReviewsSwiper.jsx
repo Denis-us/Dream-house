@@ -63,7 +63,7 @@ const ReviewsSwiper = () => {
                                     </div>
                                 </div>
                                 <div className={s.grade}>
-                                    <Star/>
+                                    <Star className={s.star}/>
                                     <span className={s.number}>{slide.grade}</span>
                                 </div>
                             </div>
