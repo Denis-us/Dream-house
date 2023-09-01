@@ -24,13 +24,15 @@ const ReadyToSell = () => {
     };
 
     return (
-        <section>
+        <section className={s.section}>
+                <div className={s.circleFirst}></div>
+                <div className={s.circleSecond}></div>
                 <Swiper
                     modules={[Autoplay, Pagination]}
                     initialSlide={0}
                     slidesPerView={1}
                     loop={true}
-                    autoplay={{ delay: isHovered ? 10000000 : 1000 }}
+                    autoplay={{ delay: isHovered ? 10000000 : 5000 }}
                     pauseOnMouseEnter={true}
                     className={s.swiper}
                 >

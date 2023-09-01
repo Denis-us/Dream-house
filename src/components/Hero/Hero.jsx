@@ -18,7 +18,10 @@ const Hero = () => {
     return (
         <section>
             <div class="container">
+                
                 <div className={s.hero}>
+                <div className={s.circleFirst}></div>
+                <div className={s.circleSecond}></div>
                     <div className={s.heroMain}>
                         <h1 className={s.title}>Find The Place To<br/>Live <span className={s.titlePart}>Your Dreams</span><br/>Easily Here</h1>
                         <p className={s.paragraph}>Everything you need about finding your place to live will be here, where it will be easier for you</p>

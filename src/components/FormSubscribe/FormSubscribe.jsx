@@ -26,7 +26,7 @@ const Form = ({ icoInput, placeholder, btn, icoBtn }) => {
     return (
         <form className={`${s.form} ${(!isValidEmail || (isFormSubmitted && email === '')) ? s.invalid : ''}`} onSubmit={handleFormSubmit}>
             <div className={s.wrapper}>
-                <img src={icoInput} alt="marker" />
+                <img src={icoInput} alt="marker" className={s.icoInput}/>
                 <input
                     className={s.input}
                     type="email"

@@ -1,5 +1,32 @@
 .footer {
+    position: relative;
     padding: 0px 20px;
+}
+
+.circleFirst {
+    position: absolute;
+    top: -250px;
+    right: -330px;
+    background: radial-gradient(circle at center, #B9FF82 20%, transparent 50%);
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    opacity: 0.3;
+    filter: blur(60px);
+    z-index: -1;
+}
+
+.circleSecond {
+    position: absolute;
+    top: -400px;
+    right: -450px;
+    background: radial-gradient(circle at center, #82BBFF 20%, transparent 50%);
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    opacity: 0.3;
+    filter: blur(60px);
+    z-index: -1;
 }
 
 .footerMain {

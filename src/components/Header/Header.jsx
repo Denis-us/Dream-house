@@ -4,7 +4,6 @@ import BurgerMenu from '../burgerMenu/BurgerMenu';
 import Navigation from '../Navigation/Navigation';
 import s from './Header.module.css';
 
-
 const Header = () => {
   
     const [isClicked, setIsClicked] = useState(false);

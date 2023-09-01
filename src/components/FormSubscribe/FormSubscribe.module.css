@@ -3,6 +3,7 @@
     padding: 4px 4px 4px 15px;
     border-radius: 32px;
     height: 56px;
+    max-width: 400px;
     border: 1px solid #E0E3EB;
     margin-top: 16px;
     background-color: white;
@@ -74,7 +75,7 @@
     }
 
     .input {
-        width: 300px;
+        /* width: 300px; */
     }
 
     .input::placeholder {

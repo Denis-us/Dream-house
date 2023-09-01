@@ -17,6 +17,8 @@ const MoreAbout = () => {
         <section>
             <div class="container">
                 <div className={s.head}>
+                    <div className={s.circleFirst}></div>
+                    <div className={s.circleSecond}></div>
                     <p className={s.pretitle}>See Tips And Trick From Our Partnership</p>
                     <h2 className={s.mainTitle}>Find Out More About Selling And Buying Homes</h2>
                     <button className={s.btn}>More Artikel</button>

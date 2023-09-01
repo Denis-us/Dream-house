@@ -27,7 +27,7 @@ const Subscribe = () => {
     }
 
     return (
-        <section>
+        <section className={s.section}>
             <div class="container">
                 <div className={s.wrapper}>
                     <div className={s.icons}>

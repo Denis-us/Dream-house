@@ -11,6 +11,8 @@ const Footer = () => {
   
     return (
         <footer className={s.footer}>
+            <div className={s.circleFirst}></div>
+            <div className={s.circleSecond}></div>
             <div class="container">
                 <div className={s.footerMain}>
                     <div className={s.footerSocials}>
