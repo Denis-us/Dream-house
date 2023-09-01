@@ -15,10 +15,6 @@ body {
   background-color: white;
 }
 
-main {
-  overflow: hidden;
-}
-
 h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
@@ -39,6 +35,10 @@ button {
 section {
   padding: 0px 20px;
   margin-bottom: 60px
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 .container {
